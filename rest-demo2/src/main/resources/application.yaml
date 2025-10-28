@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://ep-weathered-snow-a45593pu-pooler.us-east-1.aws.neon.tech/neondb?sslmode=require
+    username: neondb_owner
+    password: npg_Mo4EbIWjn7Ow
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update       # can be create, create-drop, update, validate
+    show-sql: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+server:
+  port: 8080
